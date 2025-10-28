@@ -51,7 +51,7 @@ export default function ContactPage() {
         <div className="relative z-10 text-center px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Get in Touch</h1>
           <p className="text-xl text-gray-300">
-            We'd love to hear from you
+            We&apos;d love to hear from you
           </p>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
               {submitted ? (
                 <div className="bg-green-900/20 border border-green-800 text-green-400 px-6 py-4 rounded-lg">
-                  Thank you for your message! We'll get back to you soon.
+                  Thank you for your message! We&apos;ll get back to you soon.
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">

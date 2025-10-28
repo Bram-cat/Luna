@@ -36,10 +36,10 @@ export default function AboutPage() {
               Welcome to Luna Eclectic Emporium, your premier destination for unique gifts and treasures in Charlottetown, Prince Edward Island. Our shop is a carefully curated collection of one-of-a-kind items that celebrate creativity, artistry, and individuality.
             </p>
             <p>
-              At Luna Eclectic Emporium, we believe that the perfect gift tells a story. That's why we've dedicated ourselves to sourcing distinctive items from local artisans, independent creators, and unique suppliers from around the world. Each piece in our store has been selected with care and attention to quality.
+              At Luna Eclectic Emporium, we believe that the perfect gift tells a story. That&apos;s why we&apos;ve dedicated ourselves to sourcing distinctive items from local artisans, independent creators, and unique suppliers from around the world. Each piece in our store has been selected with care and attention to quality.
             </p>
             <p>
-              Our passion is helping you find that special something - whether it's a gift for a loved one, a treat for yourself, or that perfect piece to complete your home. We take pride in offering personalized service and expert guidance to make your shopping experience memorable.
+              Our passion is helping you find that special something - whether it&apos;s a gift for a loved one, a treat for yourself, or that perfect piece to complete your home. We take pride in offering personalized service and expert guidance to make your shopping experience memorable.
             </p>
           </div>
         </div>

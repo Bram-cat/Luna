@@ -51,7 +51,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-400 text-base">
-                  Carefully curated collection of one-of-a-kind gifts, home decor, and treasures you won't find anywhere else.
+                  Carefully curated collection of one-of-a-kind gifts, home decor, and treasures you won&apos;t find anywhere else.
                 </CardDescription>
               </CardContent>
             </Card>
