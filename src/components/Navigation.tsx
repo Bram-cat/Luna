@@ -1,60 +1,69 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { useState } from "react"
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isLogoHovered, setIsLogoHovered] = useState(false)
 
+  const letters = ["L", "u", "n", "a", " ", "E", "c", "l", "e", "c", "t", "i", "c", " ", "E", "m", "p", "o", "r", "i", "u", "m"]
+
   return (
-    <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-black via-gray-900 to-black backdrop-blur-lg border-b border-gray-700/50 shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 w-full z-50 bg-white/5 backdrop-blur-xl border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo and Brand Name */}
+          {/* Animated Brand Name */}
           <Link
             href="/"
-            className="flex items-center gap-3 group"
+            className="relative group"
             onMouseEnter={() => setIsLogoHovered(true)}
             onMouseLeave={() => setIsLogoHovered(false)}
           >
-            <div className="relative w-10 h-10 overflow-hidden rounded-full ring-2 ring-gray-700 group-hover:ring-gray-500 transition-all duration-300">
-              <Image
-                src="/image.png"
-                alt="Luna Eclectic Emporium Logo"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative overflow-hidden">
-              <span className="text-xl font-bold text-white tracking-wider transition-all duration-300 ease-in-out group-hover:text-gray-300">
-                {isLogoHovered ? (
-                  <span className="inline-block animate-fade-in">Luna Eclectic Emporium</span>
-                ) : (
-                  <span className="inline-block">LEE</span>
-                )}
-              </span>
+            <div className="relative overflow-hidden py-2">
+              {!isLogoHovered ? (
+                <span className="text-2xl font-bold text-white tracking-[0.3em] transition-all duration-500" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: 700 }}>
+                  LEE
+                </span>
+              ) : (
+                <span className="text-2xl font-bold text-white inline-flex" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: 700 }}>
+                  {letters.map((letter, index) => (
+                    <span
+                      key={index}
+                      className="inline-block animate-letter-appear"
+                      style={{
+                        animationDelay: `${index * 40}ms`,
+                        animationFillMode: 'both'
+                      }}
+                    >
+                      {letter === " " ? "\u00A0" : letter}
+                    </span>
+                  ))}
+                </span>
+              )}
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center gap-2">
             <Link
               href="/"
-              className="px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-all duration-200 font-medium"
+              className="px-5 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-full hover:bg-white/10 transition-all duration-200"
+              style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-all duration-200 font-medium"
+              className="px-5 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-full hover:bg-white/10 transition-all duration-200"
+              style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-all duration-200 font-medium"
+              className="px-6 py-2.5 text-sm font-semibold text-black bg-white rounded-full hover:bg-gray-200 transition-all duration-200 shadow-lg hover:shadow-xl"
+              style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
             >
               Contact
             </Link>
@@ -62,7 +71,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white p-2 hover:bg-gray-800/50 rounded-lg transition-colors"
+            className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -86,24 +95,24 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 space-y-2 border-t border-gray-700/50 animate-fade-in">
+          <div className="md:hidden py-4 space-y-2 border-t border-white/10">
             <Link
               href="/"
-              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors"
+              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors"
+              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-colors"
+              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact

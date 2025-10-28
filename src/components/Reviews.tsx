@@ -51,21 +51,35 @@ export default function Reviews() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">What Our Customers Say</h2>
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex items-center justify-center gap-3 mb-2">
             <div className="flex">
-              {[...Array(5)].map((_, i) => (
+              {[...Array(4)].map((_, i) => (
                 <svg
                   key={i}
-                  className="w-6 h-6 text-yellow-400 fill-current"
+                  className="w-7 h-7 text-yellow-400 fill-current"
                   viewBox="0 0 20 20"
                 >
                   <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                 </svg>
               ))}
+              <svg
+                className="w-7 h-7 text-yellow-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <defs>
+                  <linearGradient id="half-star">
+                    <stop offset="50%" stopColor="currentColor" />
+                    <stop offset="50%" stopColor="transparent" />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#half-star)" d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                <path fill="none" stroke="currentColor" strokeWidth="0.5" d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+              </svg>
             </div>
-            <span className="text-gray-400 ml-2">5.0 out of 5</span>
+            <span className="text-2xl font-bold text-white">4.5</span>
           </div>
-          <p className="text-gray-400">Based on Google Reviews</p>
+          <p className="text-gray-400">Based on 75 Google Reviews</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

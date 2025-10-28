@@ -39,3 +39,19 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #555555;
 }
+
+/* Letter appear animation */
+@keyframes letter-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-letter-appear {
+  animation: letter-appear 0.3s ease-out;
+}
