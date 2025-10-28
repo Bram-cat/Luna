@@ -31,7 +31,7 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Visit Our Store</h2>
                 <p className="text-gray-300 mb-8">
-                  Come visit us in person to explore our full collection of unique gifts and treasures!
+                  Come visit us in person to explore our premium selection of tobacco and vape products!
                 </p>
               </div>
 
@@ -44,10 +44,9 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300 text-base">
-                    <a href="https://maps.google.com/?q=Confederation+Court+Mall+111A+Grafton+St+Charlottetown+PE" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                      Confederation Court Mall<br />
-                      111A Grafton St<br />
-                      Charlottetown, PE C1A 1K9
+                    <a href="https://maps.google.com/?q=15+St+Peters+Rd+6+Charlottetown+PE" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                      15 St Peters Rd #6<br />
+                      Charlottetown, PE
                     </a>
                   </CardDescription>
                 </CardContent>
@@ -62,8 +61,8 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300 text-base">
-                    <a href="tel:+19028925862" className="hover:text-white transition-colors">
-                      (902) 892-5862
+                    <a href="tel:+19026286794" className="hover:text-white transition-colors">
+                      (902) 628-6794
                     </a>
                   </CardDescription>
                 </CardContent>
@@ -78,8 +77,24 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300 text-base">
-                    <a href="mailto:moonsnailpei@gmail.com" className="hover:text-white transition-colors">
-                      moonsnailpei@gmail.com
+                    <a href="mailto:jwincey@hotmail.com" className="hover:text-white transition-colors">
+                      jwincey@hotmail.com
+                    </a>
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-black border-gray-800 hover:border-gray-600 transition-colors">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <span className="text-2xl">📘</span>
+                    Facebook
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-gray-300 text-base">
+                    <a href="https://www.facebook.com/StogiesCharlottetown" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                      StogiesCharlottetown
                     </a>
                   </CardDescription>
                 </CardContent>
@@ -91,20 +106,20 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Find Us on the Map</h2>
                 <p className="text-gray-300 mb-8">
-                  Located in the heart of beautiful Charlottetown, Prince Edward Island
+                  Located in Charlottetown, Prince Edward Island
                 </p>
               </div>
 
               <div className="relative w-full h-[500px] rounded-xl overflow-hidden border-2 border-gray-800 shadow-2xl">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.9876543210123!2d-63.12799999999999!3d46.23888888888888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5e52e0e0e0e0e0%3A0x0!2sConfederation%20Court%20Mall!5e0!3m2!1sen!2sca!4v1234567890123!5m2!1sen!2sca"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.4729485856!2d-63.13697!3d46.23888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5e52daa4e64df3%3A0x5f8f8f8f8f8f8f8f!2s15%20St%20Peters%20Rd%2C%20Charlottetown%2C%20PE!5e0!3m2!1sen!2sca!4v1234567890123!5m2!1sen!2sca"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Luna Eclectic Emporium Location"
+                  title="Stogies Charlottetown Location"
                   className="grayscale-[20%] contrast-125"
                 ></iframe>
               </div>
@@ -112,7 +127,7 @@ export default function ContactPage() {
               <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
                 <p className="text-gray-400 text-sm text-center">
                   <a
-                    href="https://maps.google.com/?q=Confederation+Court+Mall+111A+Grafton+St+Charlottetown+PE"
+                    href="https://maps.google.com/?q=15+St+Peters+Rd+6+Charlottetown+PE"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:underline font-medium"
@@ -135,15 +150,15 @@ export default function ContactPage() {
               <div className="space-y-4 text-lg">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">Monday - Friday</span>
-                  <span className="text-white font-semibold">10:00 AM - 6:00 PM</span>
+                  <span className="text-white font-semibold">9:00 AM - 9:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">Saturday</span>
-                  <span className="text-white font-semibold">10:00 AM - 5:00 PM</span>
+                  <span className="text-white font-semibold">9:00 AM - 9:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">Sunday</span>
-                  <span className="text-white font-semibold">12:00 PM - 4:00 PM</span>
+                  <span className="text-white font-semibold">10:00 AM - 8:00 PM</span>
                 </div>
               </div>
             </CardContent>

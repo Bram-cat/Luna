@@ -4,9 +4,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Luna Eclectic Emporium",
+  title: "Stogies Charlottetown - Premium Tobacco & Vape Shop",
   description:
-    "Discover unique gifts and treasures at Luna Eclectic Emporium in Charlottetown, PEI",
+    "Stogies Charlottetown - Your premier tobacco shop offering premium cigars, pipes, vape products, and smoking accessories in PEI",
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",

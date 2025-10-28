@@ -9,7 +9,7 @@ export default function Navigation() {
   const [isLogoHovered, setIsLogoHovered] = useState(false)
   const pathname = usePathname()
 
-  const letters = ["L", "u", "n", "a", " ", "E", "c", "l", "e", "c", "t", "i", "c", " ", "E", "m", "p", "o", "r", "i", "u", "m"]
+  const letters = ["S", "t", "o", "g", "i", "e", "s", " ", "C", "h", "a", "r", "l", "o", "t", "t", "e", "t", "o", "w", "n"]
 
   const isActive = (path: string) => pathname === path
 
@@ -27,7 +27,7 @@ export default function Navigation() {
             <div className="relative overflow-hidden">
               {!isLogoHovered ? (
                 <span className="text-2xl font-bold text-white tracking-[0.15em] transition-all duration-300 group-hover:tracking-[0.2em]">
-                  LEE
+                  STOGIES
                 </span>
               ) : (
                 <span className="text-2xl font-bold text-white inline-flex">

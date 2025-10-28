@@ -2,46 +2,46 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const reviews = [
   {
-    name: "Katerina Espinosa",
+    name: "Steven Buell",
     rating: 5,
-    text: "When you think of the kindness of the locals in PEI, this place is an excellent example and firsthand experience.",
+    text: "Great price on cigarettes many or things there for your everyday convenience and very friendly staff providing great service.",
+    date: "a week ago",
+    badge: "Local Guide"
+  },
+  {
+    name: "Laura Clements",
+    rating: 5,
+    text: "Always super friendly staff and stocked with what I need.",
     date: "a month ago",
     badge: "Local Guide"
   },
   {
-    name: "Sylvia Perry",
-    rating: 4,
-    text: "Interesting place to find things you probably don't need but want. You could describe it as eclectic. I found some interesting souvenirs for my family. It's connected to a mall. Parking is easy in Charlottetown so not an issue. Friendly helpful staff.",
-    date: "2 months ago",
+    name: "Erin McNally",
+    rating: 5,
+    text: "Always great service. John the owner is one of the nicest guys I know and prices are cheaper in there then most places. Great selection of smoking products like pipes and bongs and grinders. I always go out of my way to go there when buying my smokes because he always knows what I need and and u can't beat the price.",
+    date: "3 years ago",
     badge: "Local Guide"
   },
   {
-    name: "Joanne Argue",
+    name: "Crysta M",
     rating: 5,
-    text: "I love stopping in to this store. I was looking for a new purse and knew I would find something fun and beautiful at Luna. And my daughter had a great time picking out a few pins.",
-    date: "2 years ago",
+    text: "Everytime I go in, I leave with a smile",
+    date: "3 weeks ago",
     badge: "Local Guide"
   },
   {
-    name: "Lindsey Ross",
+    name: "Josh Cormier",
     rating: 5,
-    text: "Great store. Always super friendly staff there to greet and help you. I like the variety of items they carry - some local and some fun items brought in from elsewhere.",
+    text: "Amazing service, best prices in town. Amidst the hundreds of customers they must interact with, they always know my purchase and have it ready before I can ask for it. Wonderful owners and staff.",
     date: "5 years ago",
     badge: "Local Guide"
   },
   {
-    name: "Marlowe Power-Lockman",
+    name: "Brechan",
     rating: 5,
-    text: "I was buying an ornament of a mouse holding a rainbow, and received a compliment from an employee on my purchase. I thanked them, saying that I already had one and they would be wives, to which they responded that they totally agreed.",
-    date: "3 years ago",
+    text: "Family run business, nice people. Very solid selection of tobacco/vape products that they do a great job keeping stocked.",
+    date: "a year ago",
     badge: ""
-  },
-  {
-    name: "Katharine Moore",
-    rating: 5,
-    text: "Awesome shop. The ultimate skirt, made of recycled saris. Wear at least 21 different ways. Super friendly staff, dogs allowed, bowl of water for them. Definitely worth stopping in!",
-    date: "6 years ago",
-    badge: "Local Guide"
   }
 ]
 
@@ -77,9 +77,9 @@ export default function Reviews() {
                 <path fill="none" stroke="currentColor" strokeWidth="0.5" d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
               </svg>
             </div>
-            <span className="text-2xl font-bold text-white">4.5</span>
+            <span className="text-2xl font-bold text-white">4.9</span>
           </div>
-          <p className="text-gray-400">Based on 75 Google Reviews</p>
+          <p className="text-gray-400">Based on 113 Google Reviews</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
