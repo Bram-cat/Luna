@@ -28,7 +28,7 @@ export default function RootLayout({
         style={{ fontFamily: 'Chillax, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif' }}
       >
         <Navigation />
-        <main className="pt-[44px]">
+        <main className="pt-20">
           {children}
         </main>
         <Footer />
