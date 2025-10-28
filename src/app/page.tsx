@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Reviews from "@/components/Reviews";
 
 export default function Home() {
@@ -25,25 +31,34 @@ export default function Home() {
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto py-20">
           <div className="mb-8 animate-fade-in">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-              Luna Eclectic<br/>
-              <span className="text-gray-300">Emporium</span>
+              Luna Eclectic
+              <br />
+              <span className="text-gray-700">Emporium</span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-300 mb-4 font-light">
+            <p className="text-xl md:text-3xl text-gray-700 mb-4 font-light">
               Discover Unique Gifts & Treasures
             </p>
-            <p className="text-lg md:text-xl text-gray-400 mb-8">
+            <p className="text-lg md:text-xl text-gray-500 mb-8">
               Charlottetown, Prince Edward Island
             </p>
           </div>
 
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/about">
-              <Button size="lg" variant="default" className="hover:scale-105 transition-transform">
+              <Button
+                size="lg"
+                variant="default"
+                className="hover:scale-105 transition-transform"
+              >
                 Learn More
               </Button>
             </Link>
             <Link href="/contact">
-              <Button size="lg" variant="outline" className="hover:scale-105 transition-transform">
+              <Button
+                size="lg"
+                variant="outline"
+                className="hover:scale-105 transition-transform"
+              >
                 Visit Us
               </Button>
             </Link>
@@ -51,13 +66,24 @@ export default function Home() {
 
           {/* Contact Info Banner */}
           <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-            <a href="tel:+19028925862" className="hover:text-white transition-colors flex items-center gap-2">
+            <a
+              href="tel:+19028925862"
+              className="hover:text-white transition-colors flex items-center gap-2"
+            >
               <span>📞</span> (902) 892-5862
             </a>
-            <a href="mailto:moonsnailpei@gmail.com" className="hover:text-white transition-colors flex items-center gap-2">
+            <a
+              href="mailto:moonsnailpei@gmail.com"
+              className="hover:text-white transition-colors flex items-center gap-2"
+            >
               <span>✉️</span> moonsnailpei@gmail.com
             </a>
-            <a href="https://maps.google.com/?q=Confederation+Court+Mall+111A+Grafton+St+Charlottetown+PE" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
+            <a
+              href="https://maps.google.com/?q=Confederation+Court+Mall+111A+Grafton+St+Charlottetown+PE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors flex items-center gap-2"
+            >
               <span>📍</span> Confederation Court Mall
             </a>
           </div>
@@ -67,7 +93,9 @@ export default function Home() {
       {/* Featured Section */}
       <section className="py-20 bg-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-12">What Makes Us Special</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">
+            What Makes Us Special
+          </h2>
 
           {/* Circular Feature Image */}
           <div className="flex justify-center mb-16">
@@ -88,7 +116,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-400 text-base">
-                  Carefully curated collection of one-of-a-kind gifts, home decor, and treasures you won&apos;t find anywhere else.
+                  Carefully curated collection of one-of-a-kind gifts, home
+                  decor, and treasures you won&apos;t find anywhere else.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -99,7 +128,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-400 text-base">
-                  Supporting local artists and craftspeople by showcasing their beautiful handmade creations.
+                  Supporting local artists and craftspeople by showcasing their
+                  beautiful handmade creations.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -110,7 +140,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-400 text-base">
-                  Our friendly staff is dedicated to helping you find the perfect gift for any occasion.
+                  Our friendly staff is dedicated to helping you find the
+                  perfect gift for any occasion.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -124,7 +155,10 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
-              <div key={num} className="relative h-64 overflow-hidden rounded-lg group">
+              <div
+                key={num}
+                className="relative h-64 overflow-hidden rounded-lg group"
+              >
                 <Image
                   src={`/${num}.jpg`}
                   alt={`Gallery image ${num}`}
@@ -143,7 +177,9 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gray-950">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Ready to Discover Something Special?</h2>
+          <h2 className="text-4xl font-bold mb-6">
+            Ready to Discover Something Special?
+          </h2>
           <p className="text-xl text-gray-400 mb-8">
             Visit us today and explore our unique collection
           </p>
