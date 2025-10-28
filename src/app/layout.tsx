@@ -24,8 +24,8 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/image.png" />
       </head>
       <body
-        className="antialiased bg-black text-white font-sans"
-        style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif' }}
+        className="antialiased bg-black text-white"
+        style={{ fontFamily: 'Chillax, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif' }}
       >
         <Navigation />
         <main className="pt-[44px]">

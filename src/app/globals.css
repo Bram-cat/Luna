@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+/* Chillax Font */
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax-Variable.woff2') format('woff2-variations'),
+       url('/fonts/Chillax-Variable.woff') format('woff-variations');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #000000;
   --foreground: #ffffff;
+  --font-chillax: 'Chillax', -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 @theme inline {
