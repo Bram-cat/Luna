@@ -12,7 +12,7 @@ export default function Home() {
         {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/image.png"
+            src="/8.jpg"
             alt="Luna Eclectic Emporium"
             fill
             className="object-cover opacity-20"
@@ -38,12 +38,12 @@ export default function Home() {
 
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/about">
-              <Button variant="default" className="text-lg px-10 py-7 hover:scale-105 transition-transform">
+              <Button size="lg" variant="default" className="hover:scale-105 transition-transform">
                 Learn More
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" className="text-lg px-10 py-7 hover:scale-105 transition-transform">
+              <Button size="lg" variant="outline" className="hover:scale-105 transition-transform">
                 Visit Us
               </Button>
             </Link>
@@ -148,7 +148,7 @@ export default function Home() {
             Visit us today and explore our unique collection
           </p>
           <Link href="/contact">
-            <Button variant="default" className="text-lg px-8 py-6">
+            <Button size="lg" variant="default">
               Get in Touch
             </Button>
           </Link>

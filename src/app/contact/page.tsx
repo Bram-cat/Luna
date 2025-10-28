@@ -123,7 +123,7 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <Button type="submit" variant="default" className="w-full">
+                  <Button type="submit" size="lg" variant="default" className="w-full">
                     Send Message
                   </Button>
                 </form>

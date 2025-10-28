@@ -10,23 +10,23 @@ export default function Navigation() {
   const letters = ["L", "u", "n", "a", " ", "E", "c", "l", "e", "c", "t", "i", "c", " ", "E", "m", "p", "o", "r", "i", "u", "m"]
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/5 backdrop-blur-xl border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-2xl border-b border-white/10">
+      <div className="max-w-[980px] mx-auto px-5">
+        <div className="flex justify-between items-center h-[44px]">
           {/* Animated Brand Name */}
           <Link
             href="/"
-            className="relative group"
+            className="relative flex items-center"
             onMouseEnter={() => setIsLogoHovered(true)}
             onMouseLeave={() => setIsLogoHovered(false)}
           >
-            <div className="relative overflow-hidden py-2">
+            <div className="relative overflow-hidden">
               {!isLogoHovered ? (
-                <span className="text-2xl font-bold text-white tracking-[0.3em] transition-all duration-500" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: 700 }}>
+                <span className="text-[21px] font-semibold text-white tracking-tight transition-all duration-300">
                   LEE
                 </span>
               ) : (
-                <span className="text-2xl font-bold text-white inline-flex" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: 700 }}>
+                <span className="text-[21px] font-semibold text-white inline-flex">
                   {letters.map((letter, index) => (
                     <span
                       key={index}
@@ -45,25 +45,22 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden md:flex items-center gap-8">
             <Link
               href="/"
-              className="px-5 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-full hover:bg-white/10 transition-all duration-200"
-              style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+              className="text-[12px] font-normal text-gray-300 hover:text-white transition-colors duration-200"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="px-5 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-full hover:bg-white/10 transition-all duration-200"
-              style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+              className="text-[12px] font-normal text-gray-300 hover:text-white transition-colors duration-200"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="px-6 py-2.5 text-sm font-semibold text-black bg-white rounded-full hover:bg-gray-200 transition-all duration-200 shadow-lg hover:shadow-xl"
-              style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+              className="text-[12px] font-normal text-gray-300 hover:text-white transition-colors duration-200"
             >
               Contact
             </Link>
@@ -71,16 +68,16 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+            className="md:hidden text-white p-1 hover:opacity-70 transition-opacity"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
             <svg
-              className="w-6 h-6"
+              className="w-5 h-5"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
+              strokeWidth="1.5"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -95,24 +92,24 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 space-y-2 border-t border-white/10">
+          <div className="md:hidden py-4 space-y-1 border-t border-white/10 mt-1">
             <Link
               href="/"
-              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+              className="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+              className="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+              className="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
