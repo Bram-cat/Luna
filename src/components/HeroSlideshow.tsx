@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const images = [
-  "/1.jpg",
+  "/1.png",
   "/2.jpg",
   "/3.jpg",
   "/4.jpg",
@@ -37,7 +37,7 @@ export default function HeroSlideshow() {
         >
           <Image
             src={src}
-            alt={`Luna Eclectic Emporium ${index + 1}`}
+            alt={`Stogies Charlottetown ${index + 1}`}
             fill
             className="object-cover"
             priority={index === 0}
