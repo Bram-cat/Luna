@@ -55,31 +55,9 @@ export default function Home() {
               </Button>
             </Link>
           </div>
-
-          {/* Contact Info Banner */}
-          <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-            <a
-              href="tel:+19026286794"
-              className="hover:text-white transition-colors flex items-center gap-2"
-            >
-              <span>📞</span> (902) 628-6794
-            </a>
-            <a
-              href="mailto:jwincey@hotmail.com"
-              className="hover:text-white transition-colors flex items-center gap-2"
-            >
-              <span>✉️</span> jwincey@hotmail.com
-            </a>
-            <a
-              href="https://www.facebook.com/StogiesCharlottetown"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors flex items-center gap-2"
-            >
-              <span>📘</span> Facebook
-            </a>
-          </div>
         </div>
+
+        {/* Contact Info Banner */}
       </section>
 
       {/* Featured Section */}
@@ -108,7 +86,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-400 text-base">
-                  Wide variety of premium cigars, pipes, vape products, and smoking accessories from top brands.
+                  Wide variety of premium cigars, pipes, vape products, and
+                  smoking accessories from top brands.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -119,7 +98,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-400 text-base">
-                  Our knowledgeable staff can help you find exactly what you need, whether you&apos;re a beginner or enthusiast.
+                  Our knowledgeable staff can help you find exactly what you
+                  need, whether you&apos;re a beginner or enthusiast.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -130,7 +110,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-400 text-base">
-                  Competitive prices on all products with regular promotions and loyalty rewards for our customers.
+                  Competitive prices on all products with regular promotions and
+                  loyalty rewards for our customers.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -143,7 +124,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
+            {[2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
               <div
                 key={num}
                 className="relative h-64 overflow-hidden rounded-lg group"
@@ -166,9 +147,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gray-950">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">
-            Visit Us Today
-          </h2>
+          <h2 className="text-4xl font-bold mb-6">Visit Us Today</h2>
           <p className="text-xl text-gray-400 mb-8">
             Experience the best tobacco shop in Charlottetown
           </p>

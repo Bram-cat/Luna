@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const images = [
   "/1.jpg",
@@ -13,21 +13,18 @@ const images = [
   "/7.jpg",
   "/8.jpg",
   "/9.jpg",
-  "/10.jpg",
-  "/11.jpg",
-  "/12.jpg",
-]
+];
 
 export default function HeroSlideshow() {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }, 5000) // Change image every 5 seconds
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="absolute inset-0 z-0">
@@ -51,5 +48,5 @@ export default function HeroSlideshow() {
       {/* Dark overlay to enhance text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-black/90"></div>
     </div>
-  )
+  );
 }
