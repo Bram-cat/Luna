@@ -55,30 +55,6 @@ export default function Home() {
               </Button>
             </Link>
           </div>
-
-          {/* Contact Info Banner */}
-          <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-            <a
-              href="tel:+19028925862"
-              className="hover:text-white transition-colors flex items-center gap-2"
-            >
-              <span>📞</span> (902) 892-5862
-            </a>
-            <a
-              href="mailto:moonsnailpei@gmail.com"
-              className="hover:text-white transition-colors flex items-center gap-2"
-            >
-              <span>✉️</span> moonsnailpei@gmail.com
-            </a>
-            <a
-              href="https://maps.google.com/?q=Confederation+Court+Mall+111A+Grafton+St+Charlottetown+PE"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors flex items-center gap-2"
-            >
-              <span>📍</span> Confederation Court Mall
-            </a>
-          </div>
         </div>
       </section>
 
