@@ -12,13 +12,13 @@ export default function Home() {
         {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/1.jpg"
-            alt="Luna Eclectic Emporium storefront"
+            src="/image.png"
+            alt="Luna Eclectic Emporium"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-20"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black"></div>
         </div>
 
         {/* Hero Content */}
@@ -68,6 +68,19 @@ export default function Home() {
       <section className="py-20 bg-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12">What Makes Us Special</h2>
+
+          {/* Circular Feature Image */}
+          <div className="flex justify-center mb-16">
+            <div className="relative w-64 h-64 rounded-full overflow-hidden ring-4 ring-gray-700 shadow-2xl hover:ring-gray-500 transition-all duration-300">
+              <Image
+                src="/5.jpg"
+                alt="Luna Eclectic Emporium Featured Item"
+                fill
+                className="object-cover hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="bg-black border-gray-800 hover:border-gray-600 transition-colors">
               <CardHeader>
