@@ -1,103 +1,122 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-black text-white">
+      {/* Hero Section */}
+      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/1.jpg"
+            alt="Luna Eclectic Emporium storefront"
+            fill
+            className="object-cover opacity-40"
+            priority
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            Luna Eclectic Emporium
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-300 mb-8">
+            Discover Unique Gifts & Treasures in Charlottetown, PEI
+          </p>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Link href="/about">
+              <Button variant="default" className="text-lg px-8 py-6">
+                Learn More
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button variant="outline" className="text-lg px-8 py-6">
+                Visit Us
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Section */}
+      <section className="py-20 bg-gray-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-12">What Makes Us Special</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="bg-black border-gray-800 hover:border-gray-600 transition-colors">
+              <CardHeader>
+                <CardTitle className="text-2xl">Unique Selection</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-400 text-base">
+                  Carefully curated collection of one-of-a-kind gifts, home decor, and treasures you won't find anywhere else.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-black border-gray-800 hover:border-gray-600 transition-colors">
+              <CardHeader>
+                <CardTitle className="text-2xl">Local & Artisan</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-400 text-base">
+                  Supporting local artists and craftspeople by showcasing their beautiful handmade creations.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-black border-gray-800 hover:border-gray-600 transition-colors">
+              <CardHeader>
+                <CardTitle className="text-2xl">Personal Service</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-400 text-base">
+                  Our friendly staff is dedicated to helping you find the perfect gift for any occasion.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-12">Gallery</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
+              <div key={num} className="relative h-64 overflow-hidden rounded-lg group">
+                <Image
+                  src={`/${num}.jpg`}
+                  alt={`Gallery image ${num}`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <Reviews />
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gray-950">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-6">Ready to Discover Something Special?</h2>
+          <p className="text-xl text-gray-400 mb-8">
+            Visit us today and explore our unique collection
+          </p>
+          <Link href="/contact">
+            <Button variant="default" className="text-lg px-8 py-6">
+              Get in Touch
+            </Button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
