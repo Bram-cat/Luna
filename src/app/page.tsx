@@ -9,36 +9,28 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Reviews from "@/components/Reviews";
+import HeroSlideshow from "@/components/HeroSlideshow";
 
 export default function Home() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
       <section className="relative min-h-[700px] flex items-center justify-center overflow-hidden">
-        {/* Background Image with Gradient Overlay */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/8.jpg"
-            alt="Luna Eclectic Emporium"
-            fill
-            className="object-cover opacity-20"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black"></div>
-        </div>
+        {/* Background Slideshow */}
+        <HeroSlideshow />
 
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto py-20">
           <div className="mb-8 animate-fade-in">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight drop-shadow-2xl">
               Luna Eclectic
               <br />
-              <span className="text-gray-600">Emporium</span>
+              <span className="text-gray-300">Emporium</span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-100 mb-4 font-light">
+            <p className="text-xl md:text-3xl text-white mb-4 font-light drop-shadow-lg">
               Discover Unique Gifts & Treasures
             </p>
-            <p className="text-lg md:text-xl text-gray-100 mb-8">
+            <p className="text-lg md:text-xl text-gray-200 mb-8 drop-shadow-lg">
               Charlottetown, Prince Edward Island
             </p>
           </div>
@@ -154,7 +146,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
+            {[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
               <div
                 key={num}
                 className="relative h-64 overflow-hidden rounded-lg group"
