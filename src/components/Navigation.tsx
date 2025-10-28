@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone } from "lucide-react"
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
