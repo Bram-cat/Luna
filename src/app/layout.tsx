@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   description:
     "Discover unique gifts and treasures at Luna Eclectic Emporium in Charlottetown, PEI",
   icons: {
-    icon: "../../public/favicon.png",
-    shortcut: "../../public/favicon.png",
-    apple: "../../public/favicon.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="../../public/favicon.png" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body
         className="antialiased bg-black text-white"

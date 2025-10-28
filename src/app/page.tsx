@@ -33,12 +33,12 @@ export default function Home() {
             <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
               Luna Eclectic
               <br />
-              <span className="text-gray-700">Emporium</span>
+              <span className="text-gray-600">Emporium</span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-700 mb-4 font-light">
+            <p className="text-xl md:text-3xl text-gray-100 mb-4 font-light">
               Discover Unique Gifts & Treasures
             </p>
-            <p className="text-lg md:text-xl text-gray-500 mb-8">
+            <p className="text-lg md:text-xl text-gray-100 mb-8">
               Charlottetown, Prince Edward Island
             </p>
           </div>
