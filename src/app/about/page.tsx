@@ -93,7 +93,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-400">
-                  We're dedicated to providing personalized, friendly service to every customer.
+                  We&apos;re dedicated to providing personalized, friendly service to every customer.
                 </p>
               </CardContent>
             </Card>

@@ -179,7 +179,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300">
-                    Have questions about our products or services? Fill out the form and we'll get back to you as soon as possible.
+                    Have questions about our products or services? Fill out the form and we&apos;ll get back to you as soon as possible.
                   </CardDescription>
                 </CardContent>
               </Card>
