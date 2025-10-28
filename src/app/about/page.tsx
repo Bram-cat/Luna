@@ -151,8 +151,19 @@ export default function AboutPage() {
           </p>
           <div className="bg-gray-950 border border-gray-800 rounded-lg p-8">
             <h3 className="text-2xl font-semibold mb-4">Luna Eclectic Emporium</h3>
-            <p className="text-gray-400 mb-2">Charlottetown, PEI</p>
-            <p className="text-gray-400">Canada</p>
+            <p className="text-gray-400 mb-4">
+              <a href="https://maps.google.com/?q=Confederation+Court+Mall+111A+Grafton+St+Charlottetown+PE" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                Confederation Court Mall<br />
+                111A Grafton St<br />
+                Charlottetown, PE C1A 1K9
+              </a>
+            </p>
+            <p className="text-gray-400 mt-3">
+              <a href="tel:+19028925862" className="hover:text-white transition-colors">(902) 892-5862</a>
+            </p>
+            <p className="text-gray-400 mt-2">
+              <a href="mailto:moonsnailpei@gmail.com" className="hover:text-white transition-colors">moonsnailpei@gmail.com</a>
+            </p>
           </div>
         </div>
       </section>

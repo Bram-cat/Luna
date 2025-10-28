@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Phone, Mail, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -37,9 +38,21 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Visit Us</h3>
-            <p className="text-gray-400 mb-2">Charlottetown, PEI</p>
-            <p className="text-gray-400">Canada</p>
+            <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
+            <div className="space-y-3 text-gray-400">
+              <a href="https://maps.google.com/?q=Confederation+Court+Mall+111A+Grafton+St+Charlottetown+PE" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 hover:text-white transition-colors">
+                <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <span>Confederation Court Mall<br/>111A Grafton St<br/>Charlottetown, PE C1A 1K9</span>
+              </a>
+              <a href="tel:+19028925862" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Phone className="w-5 h-5 flex-shrink-0" />
+                <span>(902) 892-5862</span>
+              </a>
+              <a href="mailto:moonsnailpei@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Mail className="w-5 h-5 flex-shrink-0" />
+                <span>moonsnailpei@gmail.com</span>
+              </a>
+            </div>
           </div>
         </div>
 

@@ -8,34 +8,58 @@ export default function Home() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[700px] flex items-center justify-center overflow-hidden">
+        {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/1.jpg"
             alt="Luna Eclectic Emporium storefront"
             fill
-            className="object-cover opacity-40"
+            className="object-cover opacity-30"
             priority
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black"></div>
         </div>
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Luna Eclectic Emporium
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
-            Discover Unique Gifts & Treasures in Charlottetown, PEI
-          </p>
+
+        {/* Hero Content */}
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto py-20">
+          <div className="mb-8 animate-fade-in">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
+              Luna Eclectic<br/>
+              <span className="text-gray-300">Emporium</span>
+            </h1>
+            <p className="text-xl md:text-3xl text-gray-300 mb-4 font-light">
+              Discover Unique Gifts & Treasures
+            </p>
+            <p className="text-lg md:text-xl text-gray-400 mb-8">
+              Charlottetown, Prince Edward Island
+            </p>
+          </div>
+
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/about">
-              <Button variant="default" className="text-lg px-8 py-6">
+              <Button variant="default" className="text-lg px-10 py-7 hover:scale-105 transition-transform">
                 Learn More
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" className="text-lg px-8 py-6">
+              <Button variant="outline" className="text-lg px-10 py-7 hover:scale-105 transition-transform">
                 Visit Us
               </Button>
             </Link>
+          </div>
+
+          {/* Contact Info Banner */}
+          <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+            <a href="tel:+19028925862" className="hover:text-white transition-colors flex items-center gap-2">
+              <span>📞</span> (902) 892-5862
+            </a>
+            <a href="mailto:moonsnailpei@gmail.com" className="hover:text-white transition-colors flex items-center gap-2">
+              <span>✉️</span> moonsnailpei@gmail.com
+            </a>
+            <a href="https://maps.google.com/?q=Confederation+Court+Mall+111A+Grafton+St+Charlottetown+PE" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
+              <span>📍</span> Confederation Court Mall
+            </a>
           </div>
         </div>
       </section>

@@ -148,9 +148,11 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300">
-                    Luna Eclectic Emporium<br />
-                    Charlottetown, PEI<br />
-                    Canada
+                    <a href="https://maps.google.com/?q=Confederation+Court+Mall+111A+Grafton+St+Charlottetown+PE" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                      Confederation Court Mall<br />
+                      111A Grafton St<br />
+                      Charlottetown, PE C1A 1K9
+                    </a>
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -158,14 +160,15 @@ export default function ContactPage() {
               <Card className="bg-black border-gray-800">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
-                    <span className="text-2xl">⭐</span>
-                    Rated 5.0 Stars
+                    <span className="text-2xl">📞</span>
+                    Phone
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300">
-                    Based on Google Reviews<br />
-                    Join our happy customers!
+                    <a href="tel:+19028925862" className="hover:text-white transition-colors">
+                      (902) 892-5862
+                    </a>
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -173,13 +176,15 @@ export default function ContactPage() {
               <Card className="bg-black border-gray-800">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
-                    <span className="text-2xl">💬</span>
-                    Questions?
+                    <span className="text-2xl">✉️</span>
+                    Email
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300">
-                    Have questions about our products or services? Fill out the form and we&apos;ll get back to you as soon as possible.
+                    <a href="mailto:moonsnailpei@gmail.com" className="hover:text-white transition-colors">
+                      moonsnailpei@gmail.com
+                    </a>
                   </CardDescription>
                 </CardContent>
               </Card>
